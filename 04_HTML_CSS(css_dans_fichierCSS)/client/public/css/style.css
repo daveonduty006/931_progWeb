@@ -29,7 +29,7 @@
 }
 
 .divmaison{
-    padding: 13px 30px 0px 0px; 
+    padding: 12px 30px 0px 0px; 
     font-size: 1.3em; 
     float: right;
 }
@@ -41,4 +41,19 @@
 
 .iconmaison:hover{
     color: red;
+}
+
+select{
+    padding: 12px;
+    width: 150px;
+    font-size: 14px;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.selmusique{
+    padding: 6px 0px 0px 300px;
+    font-size: 18px;
+    color: red;
+    float: left;
 }
