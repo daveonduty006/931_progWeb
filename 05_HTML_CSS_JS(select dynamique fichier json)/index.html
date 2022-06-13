@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemple 05</title>
+    <link rel="stylesheet" href="client/public/css/style.css">
+    <script src="client/public/js/requetes.js"></script>
+</head>
+<body onLoad="chargerPays()" class="bgindex">
+    <!-- Dans cet exemple, une requête asynchrone est envoyé au serveur web pour 
+         récupérer les données d'un fichier json pour présenter un select dynamique 
+         de pays d'origine à l'utilisateur sur la page index -->
+    <nav class="navbar">
+        <div class="divlogo">
+            <img class="imglogo" src="client/public/images/logo.png">
+        </div>
+        <div class="divmusique">
+            <a href="client/public/pages/musique.html">Musique</a>
+        </div>
+        <div class="selmusique">
+            <label for="idpays">Pays</label>
+            <select name="idpays" id="idpays" onchange="choixMusique()">    <!-- name for server side, id for client side -->
+            </select>      
+        </div>
+    </nav>
+
+</body>
+</html>
