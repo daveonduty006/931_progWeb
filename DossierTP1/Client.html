@@ -6,20 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enregistrement client</title>
 </head>
-<body BGCOLOR=lightblue>
+<body BGCOLOR="lightblue" STYLE="font-family:Arial, Helvetica, sans-serif">
 
-    <DIV ALIGN=center VALIGN= center>
-		<H2> FORMULAIRE D'ENREGISTREMENT DU CLIENT </H2>
-        <FORM METHOD = "post" ACTION = "scripts_ph/ppg.php">
-            <TABLE BGCOLOR=cornflowerblue  BORDER=10  WIDTH=300  HEIGHT=200>
-                <TR><TD width=800%> Identification: <TD width=20%><INPUT TYPE = "text" NAME=nom SIZE=50><BR>
-                <TR><TD>Adresse: <TD><INPUT TYPE = "text" NAME=adr SIZE=50><BR>
-                <TR><TD>Telephone maison : <TD><INPUT TYPE = "text" NAME=telm SIZE=50></TD>
-                <TR><TD>Telephone cellulaire : <TD><INPUT TYPE = "text" NAME=telc SIZE=50></TD>  
+    <DIV ALIGN="center">
+		<H2>FORMULAIRE D'ENREGISTREMENT DU CLIENT</H2>
+        <FORM METHOD="post" ACTION="scripts_ph/ppg.php">
+            <TABLE BGCOLOR="cornflowerblue" WIDTH="475" HEIGHT="200" STYLE="border:10px solid gray; font-family:Times New Roman, Times, serif">
+                <TR>
+                    <TH>Identification:</TH>
+                    <TD><INPUT TYPE="text" NAME=nom SIZE="35"></TD>
+                </TR>
+                <TR>
+                    <TH>Adresse:</TH>
+                    <TD><INPUT TYPE="text" NAME=adr SIZE="35"></TD>
+                </TR>
+                <TR>
+                    <TH>Téléphone maison:</TH>
+                    <TD><INPUT TYPE="text" NAME=telm SIZE="35"></TD>
+                </TR>
+                <TR>
+                    <TH>Téléphone cellulaire:</TH>
+                    <TD><INPUT TYPE="text" NAME=telc SIZE="35"></TD> 
+                </TR>
             </TABLE>
             <BR><BR>
-            <INPUT TYPE = "submit" VALUE = "Soumettre">
-            <INPUT TYPE = "reset" VALUE = "Effacer">           
+            <INPUT TYPE="submit" VALUE="Soumettre">
+            <INPUT TYPE="reset" VALUE="Effacer">           
         </FORM>
     </DIV>
     

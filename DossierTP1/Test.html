@@ -4,20 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>  COLLEGE  MAISONNEUVE  </title>
+    <title>COLLÈGE MAISONNEUVE</title>
+    <style>
+        .fields{
+            margin-bottom:10px;
+            margin-right: 12.0%;
+        }
+        LABEL{
+            display: inline-block;
+            width: 110px;
+        }
+    </style>
 </head>
-<body BGCOLOR= lightblue WIDTH=100% MARGIN=auto>
+<body BGCOLOR="lightblue" ALIGN="center" STYLE="font-family:Arial, Helvetica, sans-serif">
 
-        <div ALIGN=center>
-            PRÉNOM <INPUT  TYPE=text  SIZE=50  MAXLENGTH=30  NAME=Nom><BR><BR>
-            NOM <INPUT  TYPE=text  SIZE=50  MAXLENGTH=30  NAME=Prénom><BR><BR>
-            TÉLÉPHONE CELLULAIRE <INPUT  TYPE=text  SIZE=50  MAXLENGTH=30  NAME=Tel><BR><BR>
-            <INPUT  TYPE=submit  VALUE=Envoyer><BR><BR><BR><BR>
-            <A href="https://www.w3schools.com/">Savoir plus</A><BR><BR><BR>
-            <A href="https://www.w3schools.com/">
-                <IMG  SRC="livre.jpg"  PADDING=0  WIDTH=400  HEIGHT=500>
+        <H1>!! LIVRE RECHERCHÉ !!</H1><BR>
+        <DIV CLASS="fields">
+            <LABEL FOR=Prenom>Prénom</LABEL>
+            <INPUT TYPE="text" SIZE="35" MAXLENGTH="30" NAME=Prenom><BR><BR>
+        </DIV>
+        <DIV CLASS="fields">
+            <BR>
+            <LABEL FOR=Nom>Nom</LABEL>
+            <INPUT TYPE="text" SIZE="35" MAXLENGTH="30" NAME=Nom><BR><BR>
+        </DIV>
+        <DIV CLASS="fields">
+            <LABEL FOR=Tel>Téléphone cellulaire</LABEL>
+            <INPUT TYPE="text" SIZE="35" MAXLENGTH="30" NAME=Tel><BR><BR>
+        </DIV>
+        <DIV>
+            <INPUT TYPE="submit" VALUE="Envoyer"><BR><BR><BR><BR>
+            <A HREF="https://www.w3schools.com/">Savoir plus</A><BR><BR><BR>
+            <A HREF="https://www.w3schools.com/">
+                <IMG SRC="livre.jpg" PADDING="0" WIDTH="400" HEIGHT="500">
             </A>
-        </div>
+        </DIV>
     
 </body>
 </html>
