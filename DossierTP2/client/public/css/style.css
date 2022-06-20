@@ -1,0 +1,30 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+body{
+    background-image: url(../images/accueilBackground.webp);
+    font-size: 3rem;
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    text-align: center;
+}
+
+nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li{
+    cursor: pointer;
+    padding: 0.5rem;
+    flex: auto;
+    text-align: center;
+}
+
+nav ul li:hover{
+    text-decoration: underline;
+}
+
+
+
