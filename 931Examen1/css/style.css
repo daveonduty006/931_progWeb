@@ -1,9 +1,9 @@
 *, *::before, *::after{ box-sizing: border-box;}
 
-.conteneur_index{
+.body_index{
     background-color: #F0FFF0;
-    text-align: center;
     font-size: 30px;
+    text-align: center;
 }
 
 .conteneur_index h1{
@@ -17,7 +17,13 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.body_q3 h3{
+    text-align: center;
+}
+
 .table_q3{
+    display: table;
+    border: 5px ridge yellow;
     width: 75%;
     background-color: yellow;
     text-align: center;
@@ -25,11 +31,22 @@
 }
 
 .table_q3 td{
-    border: 5px;
+    border: 5px ridge yellow;
 }
 
-.cell_couleurVerte{
+.cell_titre{
     background-color: green;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cell_meilleuresVentes{
+    width: 40%;
+}
+
+.cell_felicitations{
+    font-style: italic;
 }
 
 .conteneurPrincipal_q2 h1{
