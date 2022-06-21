@@ -17,12 +17,15 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.body_q3{
+.table_q3{
+    width: 75%;
+    background-color: yellow;
     text-align: center;
+    margin: 0 auto 0 auto;
 }
 
-.tableau_q3 tr td{
-    background-color: yellow;
+.table_q3 td{
+    border: 5px;
 }
 
 .cell_couleurVerte{
