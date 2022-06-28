@@ -1,0 +1,7 @@
+/* 768px is the Bootstrap breakpoint size for medium screens */
+
+@media (min-width: 768px) {
+    .news-input {
+        width: 50%;
+    }
+}

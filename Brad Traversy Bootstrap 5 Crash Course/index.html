@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Bootcamp</title>
+    <link rel="stylesheet" href="client/assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="client/css/style.css">
+    <link rel="stylesheet" href="client/assets/bootstrap-icons-1.3.0/bootstrap-icons.css">
+    <script src="client/assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <!-- responsive navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <a href="#" class="navbar-brand">Frontend Bootcamp</a>
+            <button class="navbar-toggler" type="button"
+             data-bs-toggle="collapse"
+             data-bs-target="#navmenu"><span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <!-- ms-auto will push the ul to the end of the navbar 
+                     ms-auto stands for 'margin start: auto' -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#learn" class="nav-link">What You'll Learn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#questions" class="nav-link">Questions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#instructors" class="nav-link">Instructors</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- showcase -->
+    <!-- p-5 stands for 'padding (all-around) size 5' -->
+    <!-- text-sm-start is an optional breakpoint (the text will not be centered
+         when the window size passes the size sm) -->
+    <!-- p-lg-0 is an optional breakpoint (no padding if the window screen is 
+         size is large) (this way the laptop rests on the newsletter section) -->
+    <!-- pt-lg-5 is an optional breakpoint (padding bottom size 5 if the screen is
+         large) -->
+    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+        <div class="container">
+            <!-- d-flex will turn the container into a flex container -->
+            <!-- 'sm' is an optional breakpoint (the container will turn
+                 into a flex-container only when window size 'sm' has been
+                 reached) -->
+            <div class="d-sm-flex justify-content-between align-items-center">
+                <div>
+                    <!-- span text-warning will change the color of text inside -->
+                    <h1>Become a <span class="text-warning">Web Developer</span></h1>
+                    <!-- paragraph lead will increase the size of the characters -->
+                    <!-- my-4 stands for 'margin y-axis (top and bottom) size 4' -->
+                    <p class="lead my-4">
+                       We focus on teaching our students the fundamentals of the latest
+                       and greatest technologies to prepare them for their first dev 
+                       role
+                    </p>
+                    <button class="btn btn-primary btn-lg">Start the Enrollment</button>
+                </div>
+                <!-- img-fluid will bound the image inside the container -->
+                <!-- w-50 stands for 'width 50%'-->
+                <!-- d-none d-sm-block is an optional breakpoint (the image
+                     will not display if the window size is smaller than 
+                     d-sm-block) -->
+                <img class="img-fluid w-50 d-none d-sm-block" src="client/images/showcase.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- newsletter -->
+    <section class="bg-primary text-light p-5">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <!-- mb-3 stands for 'margin bottom size 3' -->
+                <!-- mb-md-0 is an optional breakpoint that removes the margin 
+                     if the window size passes the size -->
+                <!-- the news-input is not a bootstrap predefined class (it is 
+                     custom CSS added by the linked style.css stylesheet) -->
+                <h3 class="mb-3 mb-md-0">Sign Up For Our Newsletter</h3>
+                <div class="input-group news-input">
+                    <input type="email" class="form-control" placeholder="Enter Email">
+                    <button class="btn btn-dark btn-lg" type="button">Button</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- boxes -->
+    <section class="p-5">
+        <div class="container">
+            <!-- row turn the container into a grid container -->
+            <div class="row text-center">
+                <!-- on screens smaller that md the columns stack on top of 
+                     others -->
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <!-- in bootstrap one can use the size properties of 
+                                 header tags for such things as icons -->
+                            <div class="h1 mb-3">
+                            <i class="bi bi-laptop"></i>
+                            </div>
+                            <h3 class="card-title mb-3">Virtual</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Asperiores natus aliquam corrupti maiores, doloribus accusantium!
+                            </p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <!-- in bootstrap one can use the size properties of 
+                                 header tags for such things as icons -->
+                            <div class="h1 mb-3">
+                            <i class="bi bi-person-square"></i>
+                            </div>
+                            <h3 class="card-title mb-3">Hybrid</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Asperiores natus aliquam corrupti maiores, doloribus accusantium!
+                            </p>
+                            <a href="#" class="btn btn-dark">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <!-- in bootstrap one can use the size properties of 
+                                 header tags for such things as icons -->
+                            <div class="h1 mb-3">
+                            <i class="bi bi-people"></i>
+                            </div>
+                            <h3 class="card-title mb-3">In Person</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Asperiores natus aliquam corrupti maiores, doloribus accusantium!
+                            </p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
