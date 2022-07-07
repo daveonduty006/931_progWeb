@@ -1,0 +1,34 @@
+.bgnavbar {
+    background-color: aqua !important;
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+.imglogo{
+    width:48;
+    height: 48;
+}
+.bgindex{
+    background-image: url("../images/bgindex.jpg");
+}
+.srch {
+    float: left !important;
+}
+.dvm {
+    margin-left:50px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.con{
+    padding-right: 20px;
+    cursor: pointer;
+}
+#info{
+    color:red;
+    font-size: 11px;
+}
+#formEnregErr, #formConnexionErr{
+    color: red;
+    font-size: 13px;
+    font-weight: bold;
+}

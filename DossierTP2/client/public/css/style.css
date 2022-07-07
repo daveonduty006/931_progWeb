@@ -9,39 +9,9 @@ body{
     text-align: center;
 }
 
-.neon_container{
-    color: #fff;
-    text-shadow:
-        0 0 7px #fff,
-        0 0 10px #fff,
-        0 0 21px #fff,
-        0 0 42px #f25757,
-        0 0 82px #f25757,
-        0 0 92px #f25757,
-        0 0 102px #e50b0b,
-        0 0 151px #e50b0b;
-}
-
-.neon_container h2{
-    margin-top: -5px;
-}
-
-.defile{
-    margin-top: -50px;
-    margin-bottom: 30px;
-    display: block;
-    width: 100%;
-    transform: translateX(100%);
-    animation: move 30s linear infinite;
-}
-
-@keyframes move{
-    to { transform: translateX(-100%); }
-}
-
 nav{
-    background-color: rgba(255, 0, 0, 0.3);
-    border: 3px dotted red
+    display: flex;
+    justify-content: space-around;
 }
 
 nav ul{
@@ -63,6 +33,31 @@ nav a{
 
 nav a:hover{
     color: green;
+}
+
+.neon_container{
+    color: #fff;
+    text-shadow:
+        0 0 2px #fff,
+        0 0 5px #fff,
+        0 0 11px #fff,
+        0 0 23px #f25757,
+        0 0 47px #f25757,
+        0 0 65px #f25757,
+        0 0 82px #e50b0b,
+        0 0 99px #e50b0b;
+    margin-top: -50px;
+}
+
+.neon_container h2{
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.neon_container marquee{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: -120px;
 }
 
 .logoMaisonneuve img{

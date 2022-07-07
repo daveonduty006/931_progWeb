@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librarie</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../utilitaires/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <script src="../utilitaires/jquery-3.6.0.min.js"></script>
+    <script src="../js/global.js"></script>
+    <script src="../utilitaires/bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js"></script>
+    <script src="../js/articles.js"></script>
+    <!-- <script src="client/js/membres.js"></script>
+    <script src="client/js/connexion.js"></script> -->
+</head>
+<body onLoad="initialiser();">
+    <!-- Menu de navigation -->
+    <nav class="navbar navbar-expand-lg bgnavbar">
+        <div class="container-fluid">
+            <img class="imglogo" src="../images/logo2.png">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    
+    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+    
+                </ul>
+                <form class="d-flex srch" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <span class="dvm" data-bs-toggle="modal" data-bs-target="#modalEnreg">Devenir membre</span>
+                <span class="con" data-bs-toggle="modal" data-bs-target="#modalConnexion">Connexion</span>
+    
+            </div>
+        </div>
+    </nav>
+    <!-- Fin du menu de navigation -->
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="card col-sm-4">
+                <img id="imgLivre" src="" class="card-img-top" alt="livre">
+                <div class="card-body">
+                    <h5 id="titreLivre" class="card-title"></h5>
+                    <h5 id="prixLivre"></h5>
+                    <p id="infosLivre" class="card-text"></p>
+                    <!-- <a href="#" class="btn btn-primary">Acheter</a> -->
+                    <label for="selLivres" class="form-label">Choix de livres</label>
+                    <select id="selLivres" class="form-select" aria-label="Default select example">
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-2"></div>
+            <div class="card col-sm-4">
+                <img id="imgPap" src="" class="card-img-top" alt="livre">
+                <div class="card-body">
+                    <h5 id="titrePap" class="card-title"></h5>
+                    <h5 id="prixPap"></h5>
+                    <p id="infosPap" class="card-text"></p>
+                    <!-- <a href="#" class="btn btn-primary">Acheter</a> -->
+                    <label for="selPap" class="form-label">Choix de papeteries</label>
+                    <select id="selPap" class="form-select" aria-label="Default select example">
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
