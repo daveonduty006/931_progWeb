@@ -1,10 +1,16 @@
-.index{
+body{
     text-align: center;
     background-image: url(../images/background-index.jpg);
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.index marquee{
+.home{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+marquee{
     height:auto;
     width:1000px;
     font-family:Arial;
@@ -34,6 +40,176 @@
 .navbar a:hover{
     color: goldenrod;
 }
+
+.cards{
+    max-width: 1440px;
+    margin: 100px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.card{
+    padding: 30px;
+    margin-bottom: 10px;
+}
+
+.card__header p{
+    font-style: italic;
+}
+
+.card__img{
+    border-radius: 10px;
+}
+
+.section_musique{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.musique_titre{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.musique_titre h2{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    transform: translateX(145px);
+}
+
+
+.section_musique header p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.section_musique > div > p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: darkred;
+    color: white;
+    margin: auto;
+    height: auto;
+    width: 600px;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 8px;
+}
+
+.carousel-wrapper {
+    height: 300px;
+    position: relative;
+    width: 600px;
+    display: block;
+    margin: 50px auto ;
+    border: 2px solid black;
+}
+  
+.carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.arrow{
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+}
+
+.arrow-prev {
+    left: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.arrow-next {
+    right: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+  
+[id^= "item"] {
+    display: none;
+}
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+    background: url('../images/black_sabbath.jpg');
+    background-size: cover;
+}
+
+.item-2 {
+    background: url('../images/iron_maiden.jpg');
+    background-size: cover;
+}
+
+.item-3 {
+    background: url('../images/judas_priest.jpg');
+    background-size: cover;
+}
+  
+*:target ~ .item-1{
+    opacity: 0;
+}
+
+#item-1:target ~ .item-1 {
+opacity: 1;
+}
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+}
+
+table, th, td{
+    border: 2px solid black;
+}
+
+.tableau_loisirs{
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    height: auto;
+    width: 900px;
+    background-color: goldenrod;
+    color: black;
+}
+
+.tableau_loisirs th{
+    width: 900px;
+    height: auto;
+}
+
+.tableau_loisirs td{
+    height: 300px;
+    width: 300px;
+}
+
+.tableau_loisirs img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+
+
 
 
 
