@@ -5,10 +5,31 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.autresBody{
+    text-align: center;
+    background-image: url(../images/hell.webp);
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .home{
     text-decoration: none;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.home h1{
+    font-family: cursive;
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #FCC201,
+        0 0 82px #FCC201,
+        0 0 92px #FCC201,
+        0 0 102px #EEB609,
+        0 0 151px #EEB609;
 }
 
 marquee{
@@ -19,8 +40,16 @@ marquee{
     color:#000000;
 }
 
-.navbar{
-    border: 2px solid black;
+.autresBody marquee{
+    height:auto;
+    width:1000px;
+    font-family:Arial;
+    font-size:22pt;
+    color: darkorange;
+}
+
+.navbar, .navbar-autres{
+    border: 5px ridge white;
     border-radius: 10px;
     background-color: #000000;
     margin-top: 15px;
@@ -32,13 +61,13 @@ marquee{
     justify-content: space-around;
 }
 
-.navbar a{
+.navbar a, .navbar-autres a{
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-.navbar a:hover{
+.navbar a:hover, .navbar-autres a:hover{
     color: goldenrod;
 }
 
@@ -209,6 +238,64 @@ table, th, td{
     height: 100%;
     display: block;
 }
+
+.blinking_msg{
+    font-weight: bold;
+    color: red;
+    animation: msg 1s linear infinite;
+}
+
+@keyframes msg{
+    50% {
+      opacity: 0;
+    }
+}
+
+.navbar-autres ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.navbar-autres ul li{
+    flex-basis: 33.333333%;
+}
+
+.sel_cont{
+    margin-top: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border: 3px ridge white;
+    border-radius: 20px;
+    padding: 5px 0px 10px 0px;
+}
+
+.sel_cont select{
+    align-self: center;
+    width: auto;
+    background-color: darkred;
+    color: white;
+}
+
+.sel_cont select-selected{
+    font-size: 2rem;
+}
+
+.horns, .horns_rev{
+    margin-top: 30px;
+}
+
+.horns img{
+    border-radius: 50%;
+}
+
+.horns_rev img{
+    border-radius: 50%;
+    transform: rotate(318deg);
+}
+
 
 
 
