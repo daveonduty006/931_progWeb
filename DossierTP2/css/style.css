@@ -1,6 +1,7 @@
 body{
     text-align: center;
     background-image: url(../images/background-index.jpg);
+    background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -79,7 +80,7 @@ marquee{
     display: flex;
     flex: 1;
     justify-content: center;
-    transform: translateX(145px);
+    transform: translateX(147px);
 }
 
 
@@ -95,6 +96,7 @@ marquee{
     background-color: darkred;
     color: white;
     margin: auto;
+    margin-top: 10px;
     height: auto;
     width: 600px;
     border: 3px solid black;
@@ -189,6 +191,7 @@ table, th, td{
     width: 900px;
     background-color: goldenrod;
     color: black;
+    margin-bottom: 50px;
 }
 
 .tableau_loisirs th{
