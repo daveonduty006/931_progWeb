@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autres intérêts</title>
+    <title>---Autres intérêts---</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/spectacles.js"></script>
 </head>
-<body class="autresBody">
+<body onload="choixSpectacle();">
     
     <a href="../index.html" class="home"><h1>TROU DES FRÈRES NORMANDIN</h1></a>
     <marquee direction="left" behavior="scroll" scrollamount="10">
@@ -24,26 +25,23 @@
             <li>
                 <a href="../index.html">PAGE D'ACCUEIL</a>
             </li>
-            <li class="horns">
-                <img src="../images/horns.png" alt="hornsUp">
-            </li>
             <li>
                 <div class="sel_cont">
-                    <label for="selIF">Quelques concerts mémorables</label>
+                    <label for="idSpectacle">Quelques spectacles mémorables</label>
                     <br>
-                    <select name="selIF" id="selIF" onchange="">
-                        <option value="Maiden">Iron Maiden</option>
-                        <option value="Priest">Judas Priest</option>
-                        <option value="King">King Diamond</option>
-                        <option value="Others">Autres</option>
+                    <select id="idSpectacle" onchange="choixSpectacle();">
+                        <option value="im" selected>Iron Maiden</option>
+                        <option value="jp">Judas Priest</option>
+                        <option value="bs">Black Sabbath</option>
+                        <option value="kd">King Diamond</option>
                     </select>
                 </div>
             </li>
-            <li class="horns_rev">
-                <img src="../images/horns.png" alt="hornsUp">
-            </li>
         </ul>
     </div>
+    <section class="section_autres">
+        <iframe id="idIframe" width="1100" height="630" src=""></iframe>
+    </section>
 
 
 

@@ -5,7 +5,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.autresBody{
+.musiqueBody{
     text-align: center;
     background-image: url(../images/hell.webp);
     background-size: cover;
@@ -40,7 +40,7 @@ marquee{
     color:#000000;
 }
 
-.autresBody marquee{
+.musiqueBody marquee{
     height:auto;
     width:1000px;
     font-family:Arial;
@@ -48,27 +48,60 @@ marquee{
     color: darkorange;
 }
 
-.navbar, .navbar-autres{
+.navbar, .navbar-musique, .navbar-autres{
     border: 5px ridge white;
     border-radius: 10px;
     background-color: #000000;
     margin-top: 15px;
 }
 
-.navbar ul{
+.navbar ul, .navbar-musique ul{
     list-style: none;
     display: flex;
     justify-content: space-around;
 }
 
-.navbar a, .navbar-autres a{
+.navbar-autres ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.navbar-autres ul li{
+    flex-basis: 33.333333%;
+}
+
+.horns img{
+    border-radius: 50%;
+}
+
+.horns_rev img{
+    border-radius: 50%;
+    transform: rotate(318deg);
+}
+
+.navbar a, .navbar-musique a, .navbar-autres a{
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-.navbar a:hover, .navbar-autres a:hover{
+.navbar a:hover, .navbar-musique a:hover, .navbar-autres a:hover{
     color: goldenrod;
+}
+
+.brothers{
+    margin: auto;
+    max-width: 450px;
+    margin-top: 30px;
+}
+
+.brothers img{
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 20px;
 }
 
 .cards{
@@ -85,6 +118,12 @@ marquee{
 .card{
     padding: 30px;
     margin-bottom: 10px;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-image: url(../images/thunder.jpg);
+    background-size: cover;
+    color: white;
+    text-shadow: 3px 3px 4px black;
 }
 
 .card__header p{
@@ -92,11 +131,13 @@ marquee{
 }
 
 .card__img{
+    border: 2px solid black;
     border-radius: 10px;
 }
 
 .section_musique{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
 }
 
 .musique_titre{
@@ -251,17 +292,6 @@ table, th, td{
     }
 }
 
-.navbar-autres ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.navbar-autres ul li{
-    flex-basis: 33.333333%;
-}
-
 .sel_cont{
     margin-top: 30px;
     color: white;
@@ -283,17 +313,12 @@ table, th, td{
     font-size: 2rem;
 }
 
-.horns, .horns_rev{
+.section_autres{
     margin-top: 30px;
 }
 
-.horns img{
-    border-radius: 50%;
-}
-
-.horns_rev img{
-    border-radius: 50%;
-    transform: rotate(318deg);
+.section_autres iframe{
+    border: 3px solid black;
 }
 
 
