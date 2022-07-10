@@ -235,6 +235,11 @@ marquee{
     background: url('../images/judas_priest.jpg');
     background-size: cover;
 }
+
+.item-4 {
+    background: url('../images/king_diamond.jpg');
+    background-size: cover;
+}
   
 *:target ~ .item-1{
     opacity: 0;
@@ -244,8 +249,8 @@ marquee{
 opacity: 1;
 }
 
-#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
-    z-index: 3;
+#item-2:target ~ .item-2, #item-3:target ~ .item-3, #item-4:target ~ .item-4 {
+    z-index: 4;
     opacity: 1;
 }
 

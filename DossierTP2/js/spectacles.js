@@ -12,6 +12,10 @@ let changerIframeSrc= () => {
         src+= "interets/show_maiden.html"
     }if (sel == "jp"){
         src+= "interets/show_priest.html"
+    }if (sel == "bs"){
+        src+= "interets/show_sabbath.html"
+    }if (sel == "kd"){
+        src+= "interets/show_king.html"
     }
     document.getElementById('idIframe').src= src;
 }
