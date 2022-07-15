@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen 2</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="utilitaires\bootstrap-5.2.0-beta1-dist\css\bootstrap.min.css">
+    <script src="utilitaires\jquery-3.6.0.min.js"></script>
+    <script src="js/global.js"></script>
+    <script src="utilitaires\bootstrap-5.2.0-beta1-dist\js\bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- Barre de navigation-->
+    <nav class="navbar navbar-expand-lg bgnavbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <span class="optnavbar">Examen 2</span>
+                    </li>
+    
+                </ul>
+            </div>
+        </div>
+        <div onClick="" class="optmembre">
+            <span>Option 1</span>
+        </div>
+        <div onClick="" class="optmembre">
+            <span>Option 2</span>
+        </div>
+    </nav>
+    <!-- Fin de barre de navigation-->
+<br><br>
+    <div class="container">
+        <h3>OPÉRATIONS</h3>
+        <form class="row">
+            <div class="col-md-4">
+                <label for="exp" class="form-label">Entrer une expression</label>
+                <input type="text" class="form-control" id="exp" value="" required>
+            </div>
+            <div class="col-md-4">
+                <label for="res" class="form-label">Résultat</label>
+                <input type="text" class="form-control" id="res" value="">
+            </div>
+            <br>
+            <div class="col-12">
+                <button class="btn btn-primary" type="button" onClick="calculer();">Calculer</button>
+            </div>
+        </form>
+        <span id="spres"></span>
+    </div>
+</body>
+</html>

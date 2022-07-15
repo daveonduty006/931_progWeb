@@ -1,0 +1,53 @@
+.bgnavbar {
+    background-color: aqua !important; 
+    height: 64px;
+    opacity: 1;
+}
+
+.imglogo {
+    max-width: 64px;
+    max-width: 64px;
+    opacity: 1;
+}
+
+.optmembre {
+    float: right;
+    font-size: 18px;
+    color: red;
+    width: 200px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.optlister {
+    font-size: 18px;
+    color: red;
+    width: 300px;
+    margin-left: 40px;
+    padding-top: 10px !important;
+    cursor: pointer;
+}
+.optnavbar {
+    font-size: 12px;
+    color: red;
+    width: 200px;
+    padding-left: 20px;
+}
+
+#selAnimaux {
+    margin-left: 100px !important;
+    max-width: 220px !important;
+    background-color: rgb(122, 86, 156) ;
+    
+}
+
+.bi-file-excel {
+    float: right;
+    font-size: 24px;
+    color:red;
+    cursor: pointer;
+}
+
+#divLst {
+    display: block;
+}
