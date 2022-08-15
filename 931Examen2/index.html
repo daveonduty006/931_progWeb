@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 1</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="utilitaires\bootstrap-5.2.0-beta1-dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="utilitaires/icons-1.8.1/bootstrap-icons.css">
+    <script src="utilitaires\jquery-3.6.0.min.js"></script>
+    <script src="js/global.js"></script>
+    <script src="utilitaires\bootstrap-5.2.0-beta1-dist\js\bootstrap.min.js"></script>
+</head>
+<body onLoad="chargement();"> <!-- Au chargement de la page on appele la fonction 
+                                   chargement que va faire le se;ect des animaux et lister les animaux dans la page -->
+    <!-- Barre de navigation-->
+    <nav class="navbar navbar-expand-lg bgnavbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="pages/exercice2.html"><span class="optnavbar1">Exercice 2</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/exercice3.html"><span class="optnavbar2">Exercice 3</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin de barre de navigation-->
+<br><br>
+    <div class="d-flex flex-column align-items-end" id="infoIndex">
+        <div class="p-2">420-931-MA, Été 2022</div>
+        <div class="p-2">David Normandin</div>
+        <div class="p-2"><p id="date"></p></div>
+        <!-- <h3>OPÉRATIONS</h3>
+        <form class="row">
+            <div class="col-md-4">
+                <label for="exp" class="form-label">Entrer une expression</label>
+                <input type="text" class="form-control" id="exp" value="" required>
+            </div>
+            <div class="col-md-4">
+                <label for="res" class="form-label">Résultat</label>
+                <input type="text" class="form-control" id="res" value="">
+            </div>
+            <br>
+            <div class="col-12">
+                <button class="btn btn-primary" type="button" onClick="calculer();">Calculer</button>
+            </div>
+        </form>
+        <span id="spres"></span> -->
+    </div>
+</body>
+</html>

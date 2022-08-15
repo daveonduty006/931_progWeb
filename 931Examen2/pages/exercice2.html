@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 2</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../utilitaires\bootstrap-5.2.0-beta1-dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="../utilitaires/icons-1.8.1/bootstrap-icons.css">
+    <script src="../utilitaires\jquery-3.6.0.min.js"></script>
+    <script src="../js/global.js"></script>
+    <script src="../utilitaires\bootstrap-5.2.0-beta1-dist\js\bootstrap.min.js"></script>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg bgnavbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../images/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="../index.html"><span class="optnavbar1">Exercice 1</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="exercice3.html"><span class="optnavbar2">Exercice 3</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<br><br>
+    <div class="container text-center" id="calculMental">
+        <div class="p-2 text-center">Test de Calcul Mental</div>
+        <div class="p-2">Entre ta réponse dans le champs Réponse</div><br>
+        <div>
+            <label for="exp">Expression</label>
+            <input type="text" id="exp" value="3*8"><br><br>
+            <label for="reponse">Réponse</label>
+            <input type="text" id="reponse" placeholder="Propose une réponse ici"><br><br>
+            <label for="message">Message</label>
+            <input type="text" id="message"><br><br>
+            <label for="evaluer">Évaluer</label>
+            <button type="button" onclick="evaluer();">Évaluer</button><br><br>
+            <label for="resultat">Résultat</label>
+            <button type="button" onclick="donnerReponse();">Résultat</button>
+            <label for="effacer">Recommencer</label>
+            <button type="button" onclick="effacer();">Effacer</button>    
+
+        </div>
+    </div>
+    
+</body>
+</html>
