@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librarie</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../utilitaires/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <script src="../utilitaires/jquery-3.6.0.min.js"></script>
+    <script src="../js/global.js"></script>
+    <script src="../utilitaires/bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js"></script>
+    <script src="../js/articles.js"></script>
+    <!-- <script src="client/js/membres.js"></script>-->
+    <script src="../js/connexion.js"></script> 
+</head>
+<body class="bgachats" onLoad="initialiser();">
+    <!-- Barre de navigation-->
+    <nav class="navbar navbar-expand-lg bgnavbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../images/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <span class="optnavbar">Librairie en ligne</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div onclick="rtn();" class="optmembre">
+            <span>Déconnecter</span>
+        </div>
+    </nav>
+    <!-- Fin barre de navigation-->
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="card col-md-4" >
+                <img id="imgLivre" src="" class="card-img-top" alt="livre">
+                <div class="card-body">
+                    <h5 id="titreLivre" class="card-title"></h5>
+                    <h5 id="prixLivre"></h5>
+                    <p id="infosLivre" class="card-text"></p>
+                    <label for="selLivres" class="form-label">Choix de livres</label>
+                    <select id="selLivres" onChange="traiterLivre();" class="form-select" aria-label="Default select example">
+                    </select>
+                </div>
+            </div>
+            
+            <div class="col-lg-2"></div>
+            <div class="card col-md-4">
+                <img id="imgPap" src="" class="card-img-top" alt="livre">
+                <div class="card-body">
+                    <h5 id="titrePap" class="card-title"></h5>
+                    <h5 id="prixPap"></h5>
+                    <p id="infosPap" class="card-text"></p>
+                    <label for="selPap" class="form-label">Choix de papeteries</label>
+                    <select id="selPap" onChange="traiterPap();" class="form-select" aria-label="Default select example">
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facture -->
+    <br /><br />
+    
+    <div class="alert alert-primary d-flex align-items-center" role="alert">
+        <div id="facture"><span class="idf">FACTURE</span></div>
+    </div>
+    
+    <!-- Fin facture -->
+</body>
+</html>
