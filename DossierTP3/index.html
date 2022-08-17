@@ -34,11 +34,12 @@
         </div>
     </nav> -->
     <!-- Barre de navigation-->
+
     <nav class="navbar navbar-expand-lg bgnavbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="client/images/logo.png"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -50,13 +51,15 @@
                         <span class="optnavbar">(505) 146-0195</span>
                     </li>   
                 </ul>
+                <div class="container-fluid optionsNav">
+                    <div class="dvm" onClick="basculerVisibilteModal('modalEnreg','montrer');">
+                        <span>Devenir membre</span>
+                    </div>
+                    <div class="con" onClick="basculerVisibilteModal('modalConnexion','montrer');">
+                        <span>Connexion</span>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div onClick="basculerVisibilteModal('modalEnreg','montrer');" class="optmembre">
-            <span>Devenir membre</span>
-        </div>
-        <div onClick="basculerVisibilteModal('modalConnexion','montrer');" class="optmembre">
-            <span>Connexion</span>
         </div>
     </nav>
     <!-- Fin barre de navigation-->
@@ -160,5 +163,6 @@
         </div>
     </div>
     <!-- Fin modal connexion -->
+
 </body>
 </html>

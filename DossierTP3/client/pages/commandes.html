@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Pollos Hermanos</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../utilitaires/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <script src="../utilitaires/jquery-3.6.0.min.js"></script>
+    <script src="../js/global.js"></script>
+    <script src="../utilitaires/bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js"></script>
+    <script src="../js/articles.js"></script>
+    <!-- <script src="client/js/membres.js"></script>-->
+    <script src="../js/connexion.js"></script> 
+</head>
+<body class="bgcommandes" onLoad="initialiser();">
+    <!-- Barre de navigation-->
+    <nav class="navbar navbar-expand-lg bgnavbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../images/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <span class="optnavbar">RESTAURANT LOS POLLOS HERMANOS</span><br>
+                        <span class="optnavbar">12100 COORS Rd SW</span><br>
+                        <span class="optnavbar">ALBUQUERQUE, NEW MEXICO 87045</span><br>
+                        <span class="optnavbar">(505) 146-0195</span>
+                    </li>   
+                </ul>
+                <div class="container-fluid optionsNav">
+                    <div class="dcn" onclick="rtn();">
+                        <span>Déconnecter</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin barre de navigation-->
+    <br>
+    <div class="container menuOptions">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="card col-md-4" >
+                <p id="card-type">Entrées</p>
+                <img id="imgEntree" src="" class="card-img-top" alt="entrée">
+                <div class="card-body">
+                    <h5 id="titreEntree" class="card-title"></h5>
+                    <h5 id="prixEntree"></h5>
+                    <label for="selEntrees" class="form-label">Faites votre choix</label>
+                    <select id="selEntrees" onChange="traiterEntree();" class="form-select" aria-label="Default select example">
+                    </select>
+                </div>
+            </div>           
+            <div class="col-lg-2"></div>
+            <div class="card col-md-4">
+                <p id="card-type">Repas</p>
+                <img id="imgRepas" src="" class="card-img-top" alt="repas">
+                <div class="card-body">
+                    <h5 id="titreRepas" class="card-title"></h5>
+                    <h5 id="prixRepas"></h5>
+                    <label for="selRepas" class="form-label">Faites votre choix</label>
+                    <select id="selRepas" onChange="traiterRepas();" class="form-select" aria-label="Default select example">
+                    </select>
+                </div>
+            </div>
+        </div>
+        <!-- Facture -->
+        <div class="row">
+            <div class="alert alert-primary d-flex align-items-center" role="alert">
+                <div id="facture"><span class="idf">FACTURE</span></div>
+            </div>
+        </div>
+        <!-- Fin facture -->
+    </div> 
+    
+</body>
+</html>

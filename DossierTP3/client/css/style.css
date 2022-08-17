@@ -7,26 +7,24 @@
 } 
 */
 
-.bgnavbar {
-    height: 178px;
-    margin-top: 10px;
-}
-
-.bgachats {
-    background-image: url("../images/bgachats.jpg");
-}
-
-#navbarOptions{
+/* #navbarOptions{
     float : right;
 }
 
-/*
 .imglogo{
     max-width: 64px;
     max-width: 64px;
     opacity: 1;
 }
+
+.srch {
+    float: left !important;
+}
 */
+
+.bgnavbar {
+    margin-top: 10px;
+}
 
 .bgindex{
     background-image: url("../images/bgindex.webp");
@@ -34,18 +32,57 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.srch {
-    float: left !important;
+
+.bgcommandes{
+    background-image: url("../images/bgcommandes.jpg");
+    min-height: 1080px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.dvm {
-    margin-left:50px;
-    margin-right: 15px;
+
+.bgindex .nav-item, .bgcommandes .nav-item{
+    width: 340px;
+    border: 2px solid black;
+    background-color: goldenrod;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.bgindex .optnavbar, .bgcommandes .optnavbar {
+    font-size: 18px;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    text-shadow: 0 0 21px black;
+}
+
+.optionsNav{
+    display: flex;
+    justify-content: right;
+}
+
+.dvm, .con, .dcn{
+    font-size: 30px;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 0 0 21px black;
+    color: white;
     cursor: pointer;
+    margin: 70px
 }
-.con{
-    padding-right: 20px;
-    cursor: pointer;
+
+.menuOptions{
+    background-color: goldenrod;
+    padding-top: 15px;
+    border-radius: 10px;
+    border: 2px solid black;
 }
+
+.row{
+    margin-bottom: 30px;
+}
+
 #info{
     color:red;
     font-size: 12px;
@@ -56,34 +93,9 @@
     font-weight: bold;
 }
 
-.optmembre {
-    float: right;
-    font-size: 30px;
-    font-weight: bold;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-shadow: 0 0 21px black;
-    color: white;
-    width: 200px;
-    margin-right: 120px;
-    cursor: pointer;
-}
-.optnavbar {
-    font-size: 18px;
-    font-weight: bold;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: white;
-    text-shadow: 0 0 21px black;
-    width: 200px;
-    padding-left: 20px;
-}
-#imgLivre, #imgPap{
+#imgEntree, #imgRepas{
     max-width:100%;
     max-height: 50%;
-}
-.alert {
-    width: 100% !important;
-    position: absolute !important;
-    bottom: 0 !important;
 }
 
 .idf {
@@ -96,7 +108,22 @@
     font-size: 20px;
 }
 
+#card-type{
+    align-self: center;
+    font-size: 2rem;
+}
+
 .card {
     width: 21rem !important;
-    max-height:500px !important;
+    max-height:650px !important;
+}
+
+@media screen and (max-width: 992px) {
+    .navbar-nav, .dvm, .con {
+        display: block;
+        align-self: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    } 
 }
