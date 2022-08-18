@@ -1,55 +1,33 @@
-/*
-.bgnavbar {
-    background-color: aqua !important;
-    color: red;
-    font-size: 16px;
-    height: 64px;
-} 
-*/
-
-/* #navbarOptions{
-    float : right;
-}
-
-.imglogo{
-    max-width: 64px;
-    max-width: 64px;
-    opacity: 1;
-}
-
-.srch {
-    float: left !important;
-}
-*/
-
 .bgnavbar {
     margin-top: 10px;
 }
 
 .bgindex{
-    background-image: url("../images/bgindex.webp");
-    min-height: 1080px;
+    background-image: url("../images/bgindex.jpg");
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
 .bgcommandes{
     background-image: url("../images/bgcommandes.jpg");
-    min-height: 1080px;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
-.bgindex .nav-item, .bgcommandes .nav-item{
-    width: 340px;
+.infoRestoContainer{
     border: 2px solid black;
     background-color: goldenrod;
-    margin-left: 20px;
-    padding: 10px;
     border-radius: 10px;
+    margin-left: 30px;
+    padding: 15px;
+    min-width: 350px;
 }
 
-.bgindex .optnavbar, .bgcommandes .optnavbar {
+.infoRestoContainer p{
     font-size: 18px;
     font-weight: bold;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -57,7 +35,7 @@
     text-shadow: 0 0 21px black;
 }
 
-.optionsNav{
+.navOptions{
     display: flex;
     justify-content: right;
 }
@@ -73,6 +51,7 @@
 }
 
 .menuOptions{
+    margin-top: 60px;
     background-color: goldenrod;
     padding-top: 15px;
     border-radius: 10px;
@@ -116,14 +95,4 @@
 .card {
     width: 21rem !important;
     max-height:650px !important;
-}
-
-@media screen and (max-width: 992px) {
-    .navbar-nav, .dvm, .con {
-        display: block;
-        align-self: center;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    } 
 }

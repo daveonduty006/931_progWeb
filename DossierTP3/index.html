@@ -14,56 +14,35 @@
     <script src="client/js/connexion.js"></script>
 </head>
 <body class="bgindex">
-    <!-- Menu de navigation -->
-    <!-- <nav class="navbar navbar-expand-lg bgnavbar">
-        <div class="container-fluid">
-            <img class="imglogo" src="client/images/logo.png">
-            
-            <div class="collapse navbar-collapse" id="navbarOptions">
-                <form class="d-flex srch" role="search">
-                    <input type="search" class="form-control me-2"  placeholder="" aria-label="">
-                    <button class="btn btn-outline-success" type="submit">Recherche</button>
-                </form>
-                <div onClick="montrerModalEnregistrer();" class="optmembre">
-                    <span>Devenir membre</span>
-                </div>
-                <div onClick="montrerModalConnexion();" class="optmembre">
-                    <span>Connexion</span>
-                </div>
-            </div>
-        </div>
-    </nav> -->
-    <!-- Barre de navigation-->
 
     <nav class="navbar navbar-expand-lg bgnavbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="client/images/logo.png"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <span class="optnavbar">RESTAURANT LOS POLLOS HERMANOS</span><br>
-                        <span class="optnavbar">12100 COORS Rd SW</span><br>
-                        <span class="optnavbar">ALBUQUERQUE, NEW MEXICO 87045</span><br>
-                        <span class="optnavbar">(505) 146-0195</span>
-                    </li>   
-                </ul>
-                <div class="container-fluid optionsNav">
+            <div class="collapse navbar-collapse" id="navmenu">
+                <div class="infoRestoContainer">
+                    <p>RESTAURANT LOS POLLOS HERMANOS</p>
+                    <p>12100 COORS Rd SW</p>
+                    <p>ALBUQUERQUE, NEW MEXICO 87045</p>
+                    <p>(505) 146-0195</p>
+                </div> 
+                <div class="container-fluid navOptions"> 
                     <div class="dvm" onClick="basculerVisibilteModal('modalEnreg','montrer');">
                         <span>Devenir membre</span>
                     </div>
                     <div class="con" onClick="basculerVisibilteModal('modalConnexion','montrer');">
                         <span>Connexion</span>
                     </div>
-                </div>
+                </div>  
             </div>
         </div>
+        <!-- Fin du menu de navigation -->
     </nav>
     <!-- Fin barre de navigation-->
-    <!-- Fin du menu de navigation -->
+
     <!-- Modal enregistrer membre -->
     <div class="modal fade" id="modalEnreg" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
