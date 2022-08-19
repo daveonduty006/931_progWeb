@@ -72,9 +72,20 @@
     font-weight: bold;
 }
 
-#imgEntree, #imgRepas{
-    max-width:100%;
-    max-height: 50%;
+#card-type{
+    align-self: center;
+    font-size: 2rem;
+}
+
+.card {
+    width: 336px !important;
+    height:550px !important;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
 }
 
 .idf {
@@ -85,14 +96,4 @@
 
 #facture {
     font-size: 20px;
-}
-
-#card-type{
-    align-self: center;
-    font-size: 2rem;
-}
-
-.card {
-    width: 21rem !important;
-    max-height:650px !important;
 }
