@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pour Examen 3</title>
+    <!-- NE JAMAIS OUBLIER D'INCLURE LES FICHIERS NÉCESSAIRE -->
+    <script src="js/produits.js"></script>
+    <script src="js/javascript.js"></script>
+</head>
+<body onLoad="chargerListesDeroulantes(); lister('T','');">
+    <navbar>
+        <button onClick="lister('T','');">Lister produits</button>
+        <select id="selProduits" onChange="listerCommandesSelonProduit();"></select>
+        <select id="selClients" onChange="listerCommandesSelonClient();"></select>
+        <select id="selTotal" onChange="calculerTotal();"> 
+            <option>Tous</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+    </navbar>
+    <br/><br/>
+    <div id="contenu"></div>
+</body>
+</html>

@@ -50,6 +50,12 @@
     margin: 70px
 }
 
+.dvm:hover, .con:hover, .dcn:hover{
+    text-shadow: 0 0 21px black;
+    color: goldenrod;
+    text-decoration: underline;
+}
+
 .menuOptions{
     margin-top: 60px;
     background-color: goldenrod;
