@@ -155,64 +155,67 @@ let afficherPremieresColonnesSelonPour = (pour, nomDePour, unProduit) =>{
 }
 
 let listerCommandesSelonProduit = () => {
-    //Prendre le select de la page index.html qu'a comme id selProduits
+    // On récupère le select de la page index.html qui a comme id selProduits.
     let selProduits = document.getElementById('selProduits');
-    //Nous allons prendre le texte de l'option qu'a été choisie soit le nom du produit.
-    //Pour ce faire nous allons dans le tableau options du select en question selProduits.options
-    //et à l'indice donné par par l'option que l'utilisateur a choisi. L'indice de l'option choisie est
-    //placé toujours dans une propriété du select nommée selectedIndex et dans notre cas pour l'avoir
-    //il faut passer par notre select ce qui donne selProduits.selectedIndex. À la fin on recupére
-    //de selProduits.options[selProduits.selectedIndex] l'objet de la classe Option et de cet objet
-    //nous allons chercher la propriété text, qu'est dans ce cas-ci le nom du produit choisi. Le nom de ce 
-    //produit on va le mettre dans la variable produitChoisi. Nous allons appeler après la 
-    //fonction lister en envoyant comme valeur P puisque nous voulons lister les clients
-    //qu'ont acheté ce produit produitChoisi.
+    // Nous prenons ensuite le texte de l'option qui a été choisie soit le nom du produit.
+    // Pour ce faire nous allons dans le tableau options du select en question (selProduits.options)
+    // et à l'indice donné par le choix de l'utilisateur ( [selProduits.selectedIndex] ). 
+    // Nous aurons donc récupéré de selProduits.options[selProduits.selectedIndex] l'objet de la classe 
+    // Option de selProduits et de cet objet nous allons chercher la propriété .text, qui dans ce cas-ci 
+    // est le nom du produit choisi. 
+    // Le nom de ce produit est ensuite mis dans la variable produitChoisi. 
     let produitChoisi = selProduits.options[selProduits.selectedIndex].text;
-    lister('P', produitChoisi);//P-Pour un produit donné
+    // Nous nous servons de notre fonction lister en envoyant la valeur P comme premier paramètre puisque 
+    // nous voulons ici lister les clients ayant au cours de l'année acheté le produit (produitChoisi).
+    lister('P', produitChoisi);
 }
 
-//Voir les commentaires pour listerCommandesSelonProduit
+// Mêmes commentaires que remplirSelProduits().
 let listerCommandesSelonClient = () => {
     let selClients = document.getElementById('selClients');
     let clientChoisi = selClients.options[selClients.selectedIndex].text;
-    lister('C',clientChoisi);//C-Pour un client donné
+    // Nous envoyons comme premier paramètre la valeur C puisque nous voulons ici lister toutes les 
+    // commandes du client (clientChoisi) effectué au cours de l'année.
+    lister('C',clientChoisi);
 }
 
-//Permet de calculer le total des commandes selon la valeur du Qtr (1,2,3,4) choisi dans
-//le select selTotal 
+// Permet de calculer le total des commandes selon la valeur du quart (Qtr) de l'année choisi dans le 
+// select de id selTotal. 
 let calculerTotal = () => {
-    //Recupérer le select selTotal définit dans la page index.html.
+    // On recupère d'abord le select selTotal définit dans la page index.html.
     let selTotal = document.getElementById('selTotal');
-    //Recupére l'option choisie. Voir commentaires dans listerCommandesSelonProduit
+    // On récupère ensuite l'option choisie.
     let optionChoisie = selTotal.options[selTotal.selectedIndex].text;
     let total=0, montant;
-    //Parcour de toutes les commandes
+    // Parcours de toutes les commandes
     for(let unProduit of listeCommandes){
-        if (optionChoisie != 'Tous'){//Le choix dans le select a été soit 1,2,3 ou 4
-            //Ici ont construit le bon Qtr selon le choix fait dans le select. Ceci pour cibler le
-            //bon attribut de unProduit pour faire le calcul. Exemple : si nous avions choisit l'option 2 
-            // alors la variable option va avoir comme valeur "Qtr 2" et donc nous voulons calculer le total
-            //des commandes pour les produits qu'on une valeur pour "Qtr 2".
+        // Si le choix dans le select est soit 1, 2, 3 ou 4:
+        if (optionChoisie != 'Tous'){
+            // On construit le bon Qtr selon le choix fait dans le select. 
+            // Nous allons donc cibler le bon attribut de unProduit pour faire le calcul. 
+            // Exemple si nous avions choisi l'option 2 alors nous aurions la valeur "Qtr 2" et donc 
+            // nous voulons calculer le total des commandes pour les produits ayant une valeur pour 
+            // "Qtr 2".
             let option="Qtr "+optionChoisie;
-            //Nous allons tester su l'objet unProduit à la propriété "Qtr 2" donc différent de undefined.
-            //Si tel est le cas alors la valeur pourra ête par exemple $1,750.20
-            //Comme nous devons faire des calculs il faut retirer le $ ainsi que la , (virgule).
+            // Nous allons tester sur l'objet unProduit si la propriété "Qtr 2" est différent de 
+            // undefined.
+            // Si tel est le cas alors nous allons avoir une valeur qui s'ajoutera à la variable total.
+            // Comme nous devons faire des calculs il faut bien sûr retirer le caractère '$' ainsi que la
+            // virgule.
             if(unProduit[option] != undefined){
-                //Nous allons chercher dans la valeur le texte à partir de la position 1
-                //et le mettre dans la variable montant ce qui va donner selon l'exemple 1,750.20.
+                // Nous allons chercher dans la valeur le texte à partir de la position 1 (saut du '$') et
+                // nous le mettons dans la variable montant.
                 montant=unProduit[option].substring(1);
-                //Faudra maintenant enlever la , du nombre puisque c'est un format d'affoichage seulement.
-                //On va utiliser montant.replace(',','') qui va prendre le string montant et qui 
-                //va remplacer ',' par rien '' (pas un espace les deux ' collés).
-                //Ce qui va donner dans la variable montant et selon notre exemple 1750.20
-                //Montant ce string à le bon format d'un nombre réel. On va donc le convertir
-                //en utisant parseFloat et le mettre dans montant qui n'est plus un string mais un float et
-                //on pourra alors faire nos calculs.
+                // Nous allons premièrement devoir enlever la virgule de la variable montant via 
+                // l'instruction montant.replace(',','').
+                // Nous allons pour finir convertir notre variable montant (jusqu'à présent un String) en 
+                // une variable de type float.
                 montant=parseFloat(montant.replace(',',''));
-                //Ajouter ce montant au total.
+                // On ajoute notre montant à la variable total.
                 total+=montant;
             }
-        } else {//Le choix dans le select a été Tous on fait la même chose mais pour tous les Qtr (1,2,3,4).
+        // Si le choix dans le select est Tous alors on fait la même chose mais pour tous les Qtr.
+        } else {
             if(unProduit['Qtr 1'] != undefined){
                 montant=unProduit['Qtr 1'].substring(1);
                 montant=parseFloat(montant.replace(',',''));
@@ -235,9 +238,8 @@ let calculerTotal = () => {
             }
         }
     }
-    //Mettre le total avec 2 décilames suivi de $.
     let rep = "Total = "+total.toFixed(2)+"$";
-    //Présenter le résultat dans notre page index.html à l'intérieur de
-    //l'élément de id conetnu.
+    // On présente finalement le résultat dans notre page index.html à l'intérieur de l'élément 
+    // ayant comme id contenu.
     document.getElementById('contenu').innerHTML = rep;
 }
