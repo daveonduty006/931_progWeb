@@ -1,0 +1,40 @@
+body{
+    background-image: url(../images/bgindex.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgnavbar {
+    background-color: lightblue !important; 
+    height: 84px;
+}
+
+.navbar-brand {
+    margin-left: -10px;
+}
+
+button{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+#selPays, #selProgrammes{
+    margin-left: 20px;
+    width: auto;
+}
+
+.container{
+    background-color: lightgray!important;
+    color: black !important;
+    border: 2px solid black !important;
+    margin: auto !important;
+    width: fit-content;
+    height: 300px;
+    overflow: auto;
+}
+
+table{
+    caption-side: top !important;
+    text-align: center;
+}

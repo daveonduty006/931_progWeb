@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="client/assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="client/assets/bootstrap-icons-1.3.0/bootstrap-icons.css">
+    <link rel="stylesheet" href="client/css/style.css">
+    <script src="client/assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="client/js/etudiants.js"></script>
+    <script src="client/js/javascript.js"></script>
+</head>
+<body onLoad="creerSelects(); lister('T','');">
+
+    <!-- Barre de navigation-->
+    <nav class="navbar navbar-expand-lg bgnavbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="client/images/logo.jpg"></a>
+            <button onClick="lister('T','');">Lister</button>
+            <select id="selPays" onChange="listerEtudiantsSelonPays();"></select>
+            <select id="selProgrammes" onChange="listerEtudiantsSelonProgramme();"></select>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            </div>
+        </div>
+    </nav>
+    <!-- Fin de barre de navigation-->
+    <br/><br/>
+    <div class="container">
+        <div id="contenu"></div>
+    </div>
+    
+</body>
+</html>
